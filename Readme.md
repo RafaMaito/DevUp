@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 <h1 align="center">
     <img alt="DevUp" title="DevUp" src="./public/img/Grupo_8.png" width="25%">

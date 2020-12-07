@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img alt="DevUp" title="DevUp" src="./public/img/Grupo_8.png" width="25%" style="background-color:#000733;">
+    <img alt="DevUp" title="DevUp" src="./public/img/Grupo_8.png" width="25%" style="background-color:#000733">
 </h1>
 
 O DevUp é uma aplicação estilo blog/comunidade com notícias, informações, tutoriais, eventos e etc, sobre tecnologia e programação. A intenção é criar uma comunidade que está sempre se atualizando, trocando informações e sanando dúvidas entre os usuários. Por enquanto só foi implementado a parte do administrador

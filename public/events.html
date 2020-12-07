@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/372ad6816f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>DevUp - Eventos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light purpleBg">
+        <div class="col-6">
+          <a class="navbar-brand">
+            <img
+              src="./img/Grupo_8.png"
+              width="210"
+              height="60"
+              class="d-inline-block align-top"
+              alt=""
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <ul class="navbar-nav d-flex justify-content-around">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="./index.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./technologies.html"
+                    >Tecnologias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./events.html"
+                    >Eventos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./community.html"
+                    >Comunidade</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <form class="form-inline my-2 my-lg-0 d-none">
+                <input
+                  class="form-control mr-sm-2 w-50 h-75"
+                  type="search"
+                  placeholder="Pesquisar"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-light"
+                  type="searchButton"
+                  id="searchButton"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-light" id="logoutButton">
+                Logout <i class="fas fa-sign-out-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="start">
+        <div class="card text-center box position-absolute" id="loginBox">
+          <div class="card-body">
+            <form>
+              <h1 class="card-title mt-2 font-weight-bold purple">
+                Bem vindo ao DevUp
+              </h1>
+              <div class="d-flex flex-column mt-3 align-items-center">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="remmemberCheck"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Lembrar-me</label
+                  >
+                </div>
+              </div>
+
+              <button type="button" id="buttonEnter" class="btn purpleBg">
+                Entrar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="home-page">
+        <div class="container-fluid" id="cover-container-events">
+          <div id="text-container">
+            <h1 class="font-weight-bold">EVENTOS</h1>
+          </div>
+        </div>
+        <div class="container-fluid mt-3 mb-5">
+          <div class="row" id="frontDiv">
+            <div class="col-4 mt-5">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/Live_Cassiana.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <h5 class="card-title">Live Cassiana</h5>
+
+                  <hr />
+                  <div class="d-flex justify-content-between">
+                    <span><i class="far fa-clock"></i> 31/07</span>
+                    <button
+                      type="button"
+                      id="buttonEnter"
+                      class="btn purpleBg btn-destroy"
+                    >
+                      <a
+                        style="text-decoration: none"
+                        class="text-white"
+                        href="https://www.typescriptlang.org/"
+                        target="_blank"
+                        >Ir para Reunião</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-5">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/Live_LuizSouza.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <h5 class="card-title">Live Luiz</h5>
+
+                  <hr />
+                  <div class="d-flex justify-content-between">
+                    <span><i class="far fa-clock"></i> 25/09</span>
+                    <button
+                      type="button"
+                      id="buttonEnter"
+                      class="btn purpleBg btn-destroy"
+                    >
+                      <a
+                        style="text-decoration: none"
+                        class="text-white"
+                        href="https://www.mundojs.com.br/2020/09/25/ecmascript-2020-algumas-novidades/"
+                        target="_blank"
+                        >Ir para Reunião</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-5">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/Live_AnaBaraldi.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <h5 class="card-title">Live Ana</h5>
+
+                  <hr />
+                  <div class="d-flex justify-content-between">
+                    <span><i class="far fa-clock"></i> 30/10</span>
+                    <button
+                      type="button"
+                      id="buttonEnter"
+                      class="btn purpleBg btn-destroy"
+                    >
+                      <a
+                        style="text-decoration: none"
+                        class="text-white"
+                        href="#"
+                        target="_blank"
+                        >Ir para Reunião</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./events.bundle.js"></script>
+  </body>
+</html>

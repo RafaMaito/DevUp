@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/372ad6816f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>DevUp - Comunidade</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light purpleBg">
+        <div class="col-6">
+          <a class="navbar-brand">
+            <img
+              src="./img/Grupo_8.png"
+              width="210"
+              height="60"
+              class="d-inline-block align-top"
+              alt=""
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <ul class="navbar-nav d-flex justify-content-around">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="./index.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./technologies.html"
+                    >Tecnologias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./events.html"
+                    >Eventos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./community.html"
+                    >Comunidade</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <form class="form-inline my-2 my-lg-0 d-none">
+                <input
+                  class="form-control mr-sm-2 w-50 h-75"
+                  type="search"
+                  placeholder="Pesquisar"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-light"
+                  type="searchButton"
+                  id="searchButton"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-light" id="logoutButton">
+                Logout <i class="fas fa-sign-out-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="start">
+        <div class="card text-center box position-absolute" id="loginBox">
+          <div class="card-body">
+            <form>
+              <h1 class="card-title mt-2 font-weight-bold purple">
+                Bem vindo ao DevUp
+              </h1>
+              <div class="d-flex flex-column mt-3 align-items-center">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="remmemberCheck"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Lembrar-me</label
+                  >
+                </div>
+              </div>
+
+              <button type="button" id="buttonEnter" class="btn purpleBg">
+                Entrar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="community-page">
+        <div class="container-fluid" id="cover-container-community">
+          <div id="text-container">
+            <h1 class="font-weight-bold">COMUNIDADE PARA</h1>
+            <h1 class="font-weight-bold">AJUDAR OS DEVS</h1>
+          </div>
+        </div>
+        <div class="container text-white">
+          <div class="row mb-5 mt-5">
+            <div class="col">
+              <form>
+                <div class="form-group">
+                  <label for="title">Dúvida</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="title"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="content">Detalhes</label>
+                  <input type="teste" class="form-control" id="content" />
+                </div>
+                <label for="color">Tecnologia</label>
+                <select
+                  class="custom-select mr-sm-2 mb-3"
+                  id="inputTechnologies"
+                >
+                  <option selected value="selectTechnology">
+                    Escolha a tecnologia
+                  </option>
+                  <option value="1">JavaScript</option>
+                  <option value="2">CSS/Bootstrap</option>
+                  <option value="3">HTML</option>
+                  <option value="4">NodeJS</option>
+                  <option value="5">React</option>
+                </select>
+                <button type="button" id="btn-save" class="btn btn-primary">
+                  Salvar
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="row" id="questionList"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./community.bundle.js"></script>
+  </body>
+</html>

@@ -33,3 +33,6 @@ A aplicação possui as funcionalidades de login, página de notícias, página 
 ## Melhorias
 
 Na versão 1.0 ainda não se tem um banco de dados, então nas próximas versões, será implementado uma API, onde teremos um administrador para colocar as novidades da aplicação, um local para cadastro de usuários, onde cada um adicionara os eventos que quer participar e conseguir trocar informações com os outros usuários.
+
+<hr>
+Criado por Rafael Maito | Growdev 3ª Edição.
